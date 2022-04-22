@@ -49,9 +49,11 @@ const searchInsert = function (nums, target) {
     } else if (target > nums[nums.length - 1]) {
       nums.push(target);
       //   return indexOf(target);
+    } else if (target < nums[i]) {
+      return i;
     }
   }
 };
-console.log(searchInsert(nums3, target3));
+console.log(searchInsert(nums2, target2));
 
 module.exports = searchInsert;
