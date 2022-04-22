@@ -5,13 +5,16 @@
  *
  * @description {Implement strStr().
 
-Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+Given two strings needle and haystack, return the index of the first 
+occurrence of needle in haystack, or -1 if needle is not part of haystack.
 
 Clarification:
 
-What should we return when needle is an empty string? This is a great question to ask during an interview.
+What should we return when needle is an empty string? This is a great
+ question to ask during an interview.
 
-For the purpose of this problem, we will return 0 when needle is an empty string. This is consistent to C's strStr() and Java's indexOf().
+For the purpose of this problem, we will return 0 when needle is an
+empty string. This is consistent to C's strStr() and Java's indexOf().
 }
  
 
@@ -31,4 +34,14 @@ Constraints:
 haystack and needle consist of only lowercase English characters.
  */
 
-const strStr = function (haystack, needle) {};
+let haystack1 = "hello",
+  needle1 = "ll";
+let haystack2 = "aaaaa",
+  needle2 = "bba";
+const strStr = function (haystack, needle) {
+  if (!needle) return 0;
+  return haystack.indexOf(needle);
+};
+console.log(strStr(haystack2, needle2));
+
+module.exports = strStr;

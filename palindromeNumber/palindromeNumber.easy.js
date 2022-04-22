@@ -30,10 +30,9 @@ let num2 = 121;
 let num3 = 123;
 let num4 = 12121;
 const palindromeNumber = function (x) {
-  //   let arr = [];
   let y = x.toString().split("");
   for (let i = 0; i < y.length; i++) {
-    if (y[0] === y[y.length - 1 - i]) {
+    if (y[i] === y[y.length - 1 - i]) {
       return true;
     } else {
       return false;
